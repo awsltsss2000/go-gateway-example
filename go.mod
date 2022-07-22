@@ -1,4 +1,4 @@
-module go-gatewat-example
+module go-gateway-example
 
 go 1.18
 

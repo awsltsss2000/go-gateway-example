@@ -42,11 +42,10 @@ func main() {
 		}
 	}()
 
-	// 2. 启动 HTTP 服务
 	// Create a client connection to the gRPC server we just started
 	// This is where the gRPC-Gateway proxies the requests
 	conn, err := grpc.Dial(
-		"localhost:50051",
+		"localhost:50001",
 		grpc.WithInsecure(),
 	)
 	if err != nil {
